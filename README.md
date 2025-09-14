@@ -24,14 +24,14 @@
 
 ## Setup Instructions
 
-1. **Clone the Lab Environment**  
+### 1. Clone the Lab Environment  
 
 ```bash
 git https://github.com/ilyess-sellami/MISP-TI-Lab.git
 cd MISP-TI-Lab
 ```
 
-2. **Install Dependencies**
+### 2. Install Dependencies
 
 Ensure you have a Linux server (Ubuntu 20.04+) and run the provided install script:
 
@@ -50,7 +50,7 @@ After the installation is completed, a default admin login is generated:
 ![MISP Default Credentials](/screenshots/misp_default_credentials.png)
 
 
-3. **Configure `misp.local` on Your PC**
+### 3. Configure `misp.local` on Your PC
 
 Before accessing MISP from your local machine, you need to map the `misp.local` domain to your Ubuntu server’s IP address because MISP references this domain by default.
 
