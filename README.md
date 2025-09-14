@@ -9,6 +9,7 @@ In this lab, we set up MISP from scratch, configured access from a local machine
 
 This environment provides a **hands-on introduction** to how SOC teams collect, analyze, correlate, and share threat intelligence in real-world scenarios.  
 
+---
 
 ## 🎯 Objectives
 - Install and configure a functional **MISP instance** on Ubuntu.  
@@ -19,6 +20,7 @@ This environment provides a **hands-on introduction** to how SOC teams collect, 
 - Simulate a **Conti ransomware incident** by creating an event and adding attributes (file hashes, IP, malicious executable).  
 - **Publish events** so they are searchable, correlated, and shareable.  
 
+---
 
 ## 🛠 Features
 - **Multi-organization support** (Admin + Client organizations).  
@@ -27,6 +29,8 @@ This environment provides a **hands-on introduction** to how SOC teams collect, 
 - **IOC management** (file hashes, IP addresses, domains, files).  
 - **Event publishing and correlation** for realistic SOC training.  
 - **Hands-on practice** with a real-world malware case (Conti ransomware).  
+
+---
 
 ## 📦 Setup Instructions
 
@@ -238,6 +242,7 @@ Once published:
 - The event and its attributes are now **available for searching, correlation, and sharing**.  
 - Other users in your organization (or communities, depending on distribution settings) can **use the indicators to detect and respond to similar threats**.  
 
+---
 
 ## ✅ Conclusion
 
