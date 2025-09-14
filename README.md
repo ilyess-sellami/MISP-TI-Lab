@@ -192,3 +192,14 @@ To simulate a realistic attack, we will create an event representing a **Conti r
 - **Event Info:** `Conti ransomware detected on Acme Finance Ltd. Sample analyzed via VirusTotal`
 
 ![MISP Add Event](/screenshots/misp_add_event.png)
+
+4. Add Attributes / Indicators of Compromise (IOCs) with Setting up the **Category** `Payload Delivery`:
+
+- **MD5:** `290c7dfb01e50cea9e19da81a781af2c`
+- **SHA-256:** `53b1c1b2f41a7fc300e97d036e57539453ff82001dd3f6abf07f4896b1f9ca22`
+- **IP Address**: `131.107.255.255`
+
+
+![MISP ADD ATTRIBUTES](/screenshots/misp_event_add_attribute.png)
+
+- **File Attachment:** `53b1c1b2f41a7fc300e97d036e57539453ff82001dd3f6abf07f4896b1f9ca22.exe`
