@@ -126,3 +126,65 @@ https://misp.local
 - Mix of uppercase, lowercase, numbers, and special characters
 
 6. Save the new password. You are now ready to start using MISP securely.
+
+
+### 5. Add Client Organization
+
+To simulate a realistic SOC scenario, add a client organization that your events will target.
+
+1. Log in as an **admin** in MISP.
+
+2. Go to the top menu:
+**`Administration` → `Organisations` → `Add Organisation`**
+
+3. Fill in the details for the organization:
+
+- **Name:** `Acme Finance Ltd`  
+- **Description:** `A leading financial services company. This organization is used in the SOC lab to simulate real-world attacks targeting financial institutions.` 
+- **UUID:** Leave blank (automatically generated)  
+- **Authkey:** Optional, used for syncing with other MISP instances  
+- **Type / Sector:** `Finance / Banking`
+
+![MISP Add Org](/screenshots/misp_add_org.png)
+
+4. Save the organization.
+
+![MISP Success Add Org](/screenshots/misp_success_add_org.png)
+
+### 6. Add User to Client Organization
+
+After creating the client organization, you need to add SOC users and assign them to the organization.
+
+1. Log in as **admin** in MISP.
+
+2. Navigate to:  
+**`Administration` → `Users` → `Add User`**
+
+3. Fill in the user details:
+
+- **Email / Username:** `analyst@acmefinance.test` 
+- **Name:** `John Doe (SOC Analyst)` 
+- **Role:** `Analyst` (can view, add, and manage events for their organization)  
+- **Organization:** `Acme Finance Ltd`
+- **Password:** Use a strong password meeting MISP’s complexity requirements  
+- **Authkey:** Optional, for API access  
+
+4. Save the user.
+
+### Add Malware Event for Client Organization
+
+To simulate a realistic attack, we will create an event representing a **Conti ransomware incident** targeting the client organization **Acme Finance Ltd**.
+
+![VirusTotal Conti Ransomware](/screenshots/virustotal_conti_ransomware.png)
+
+1. Log in as a user assigned to **Acme Finance Ltd** (e.g., SOC Analyst).
+2. Navigate to:  
+**`Event Actions` → `Add Event`**
+
+3. Fill in the event details:
+
+- **Date:** 2025-09-13  
+- **Distribution:** Your organization only  
+- **Threat Level:** High  
+- **Analysis:** Initial  
+- **Event Info / Description:** Conti ransomware detected in Acme Finance Ltd. Sample analyzed via VirusTotal: [VirusTotal link](https://www.virustotal.com/gui/file/53b1c1b2f41a7fc300e97d036e57539453ff82001dd3f6abf07f4896b1f9ca22)  
