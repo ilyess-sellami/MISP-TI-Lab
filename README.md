@@ -175,6 +175,8 @@ After creating the client organization, you need to add SOC users and assign the
 
 To simulate a realistic attack, we will create an event representing a **Conti ransomware incident** targeting the client organization **Acme Finance Ltd**.
 
+[VirusTotal link](https://www.virustotal.com/gui/file/53b1c1b2f41a7fc300e97d036e57539453ff82001dd3f6abf07f4896b1f9ca22)  
+
 ![VirusTotal Conti Ransomware](/screenshots/virustotal_conti_ransomware.png)
 
 1. Log in as a user assigned to **Acme Finance Ltd** (e.g., SOC Analyst).
@@ -187,4 +189,4 @@ To simulate a realistic attack, we will create an event representing a **Conti r
 - **Distribution:** `Your organization only`
 - **Threat Level:** `High` 
 - **Analysis:** `Initial` 
-- **Event Info / Description:** `Conti ransomware detected in Acme Finance Ltd. Sample analyzed via VirusTotal (https://www.virustotal.com/gui/file/53b1c1b2f41a7fc300e97d036e57539453ff82001dd3f6abf07f4896b1f9ca22)`
+- **Event Info / Description:** `Conti ransomware detected in Acme Finance Ltd. Sample analyzed via VirusTotal`
