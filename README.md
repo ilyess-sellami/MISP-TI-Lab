@@ -48,3 +48,24 @@ After the installation is completed, a default admin login is generated:
 - Password: `<generated strong password>`
 
 ![MISP Default Credentials](/screenshots/misp_default_credentials.png)
+
+
+3. **Configure `misp.local` on Your PC**
+
+Before accessing MISP from your local machine, you need to map the `misp.local` domain to your Ubuntu server’s IP address because MISP references this domain by default.
+
+- macOS / Linux:
+1. Open a terminal.
+2. Edit your hosts file with a text editor using `sudo`:
+```bash
+   sudo nano /etc/hosts
+```
+3. Add a new line with your server IP and `misp.local`:
+```bash
+    <your-ubuntu-server-ip> misp.local
+```
+4. Save the file and exit (`Ctrl+O`, `Enter`, `Ctrl+X` in nano).
+5. Test by running (You should see responses from your server IP):
+```bash
+    ping misp.local
+```
