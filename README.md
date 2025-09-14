@@ -3,26 +3,32 @@
 ![MISP Image](/screenshots/misp.png)
 
 
-## Overview
-**MISP-TI-Lab** is a simulated Security Operations Center (SOC) environment built around **MISP (Malware Information Sharing Platform)**. This lab allows security analysts to practice **threat intelligence collection, correlation, and sharing** by simulating real-world cyber threats such as ransomware campaigns. The lab demonstrates how organizations can track, analyze, and respond to cyber threats in a controlled environment.
+## 🔎 Overview
+**MISP-TI-Lab** is a practical simulation of a **Security Operations Center (SOC)** environment using **MISP (Malware Information Sharing Platform)**.  
+In this lab, we set up MISP from scratch, configured access from a local machine, created a client organization, added users, and simulated a **real ransomware incident (Conti)** by importing actual Indicators of Compromise (IOCs).  
+
+This environment provides a **hands-on introduction** to how SOC teams collect, analyze, correlate, and share threat intelligence in real-world scenarios.  
 
 
-## Objectives
-- Deploy and configure a fully functional MISP instance.
-- Simulate malware event targeting a client organization.
-- Collect and organize Indicators of Compromise (IOCs) including file hashes, IPs, domains, URLs, and email addresses.
-- Correlate events to detect campaigns and threat patterns.
-- Apply tags, galaxy clusters, and contextual metadata for efficient threat analysis.
-- Provide a realistic SOC training environment for analysts.
-
-## Features
-- User role management (Admin, Analyst, Read-only)
-- Event creation and IOC management
-- Object and attribute grouping for contextual analysis
-- Event correlation and visualization
+## 🎯 Objectives
+- Install and configure a functional **MISP instance** on Ubuntu.  
+- Configure `misp.local` access from **MacOS, Linux, and Windows** machines.  
+- Change the **default admin credentials** and enforce password complexity.  
+- Create a **client organization (Acme Finance Ltd)** with realistic details.  
+- Add **SOC analyst users** to the client organization with proper roles.  
+- Simulate a **Conti ransomware incident** by creating an event and adding attributes (file hashes, IP, malicious executable).  
+- **Publish events** so they are searchable, correlated, and shareable.  
 
 
-## Setup Instructions
+## 🛠 Features
+- **Multi-organization support** (Admin + Client organizations).  
+- **Role-based access control** (Admin, Analyst, Read-only).  
+- **Event creation workflow** with attributes, attachments, and tags.  
+- **IOC management** (file hashes, IP addresses, domains, files).  
+- **Event publishing and correlation** for realistic SOC training.  
+- **Hands-on practice** with a real-world malware case (Conti ransomware).  
+
+## 📦 Setup Instructions
 
 ### 1. Clone the Lab Environment  
 
@@ -60,19 +66,19 @@ Before accessing MISP from your local machine, you need to map the `misp.local` 
 
 2. Edit your hosts file with a text editor using `sudo`:
 ```bash
-   sudo nano /etc/hosts
+sudo nano /etc/hosts
 ```
 
 3. Add a new line with your server IP and `misp.local`:
 ```bash
-    <your-ubuntu-server-ip> misp.local
+<your-ubuntu-server-ip> misp.local
 ```
 
 4. Save the file and exit (`Ctrl+O`, `Enter`, `Ctrl+X` in nano).
 
 5. Test by running:
 ```bash
-    ping misp.local
+ping misp.local
 ```
 
 You should see responses from your server IP.
@@ -88,7 +94,7 @@ C:\Windows\System32\drivers\etc\hosts
 
 3. Add a new line with your server IP and misp.local:
 ```bash
-    <your-ubuntu-server-ip> misp.local
+<your-ubuntu-server-ip> misp.local
 ```
 
 4. Save the file.
@@ -212,4 +218,37 @@ To simulate a realistic attack, we will create an event representing a **Conti r
 6. Optionally, add **tags or galaxy clusters** such as `Ransomware`, `Conti` 
 
 7. Click **Submit** to create and publish the event
+
+
+### 8. Final Step: Publish the Event
+
+After creating the event and adding all attributes, you need to **publish it** so that it becomes visible and usable by other analysts in your organization.
+
+1. Navigate to:  **`Event Actions` → `List Events`**
+
+![MISP Events List](/screenshots/misp_events_list.png)
+
+2. Locate the event you just created (e.g., **Conti ransomware detected in Acme Finance Ltd**).  
+
+3. Open the event and click the **Publish Event** button at the top-right.  
+
+![MISP Publish Event](/screenshots/misp_publish_event.png)
+
+Once published:  
+- The event and its attributes are now **available for searching, correlation, and sharing**.  
+- Other users in your organization (or communities, depending on distribution settings) can **use the indicators to detect and respond to similar threats**.  
+
+
+## ✅ Conclusion
+
+This lab demonstrates how to set up and use MISP (Malware Information Sharing Platform) as a SOC tool for managing and sharing threat intelligence.  
+By walking through the process of installing MISP, creating an organization and users, and simulating a real-world ransomware attack event, we saw how MISP helps:  
+
+- **Centralize threat intelligence** with structured events and attributes.  
+- **Enable correlation** between imported threat feeds and internal events.  
+- **Improve collaboration** between SOC teams and organizations by sharing indicators of compromise.  
+- **Support incident response** with actionable data such as hashes, IPs, domains, and malicious files.  
+
+With this setup, security teams can quickly detect, analyze, and respond to threats, while also contributing to a global community of defenders.  
+
 
