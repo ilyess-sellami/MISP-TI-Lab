@@ -65,7 +65,8 @@ Before accessing MISP from your local machine, you need to map the `misp.local` 
     <your-ubuntu-server-ip> misp.local
 ```
 4. Save the file and exit (`Ctrl+O`, `Enter`, `Ctrl+X` in nano).
-5. Test by running (You should see responses from your server IP):
+5. Test by running:
 ```bash
     ping misp.local
 ```
+You should see responses from your server IP.
