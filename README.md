@@ -189,4 +189,6 @@ To simulate a realistic attack, we will create an event representing a **Conti r
 - **Distribution:** `Your organization only`
 - **Threat Level:** `High` 
 - **Analysis:** `Initial` 
-- **Event Info / Description:** `Conti ransomware detected in Acme Finance Ltd. Sample analyzed via VirusTotal`
+- **Event Info:** `Conti ransomware detected on Acme Finance Ltd. Sample analyzed via VirusTotal`
+
+![MISP Add Event](/screenshots/misp_add_event.png)
