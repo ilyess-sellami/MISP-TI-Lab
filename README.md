@@ -2,8 +2,10 @@
 
 ![MISP Image](/screenshots/misp.png)
 
+---
 
 ## 🔎 Overview
+
 **MISP-TI-Lab** is a practical simulation of a **Security Operations Center (SOC)** environment using **MISP (Malware Information Sharing Platform)**.  
 In this lab, we set up MISP from scratch, configured access from a local machine, created a client organization, added users, and simulated a **real ransomware incident (Conti)** by importing actual Indicators of Compromise (IOCs).  
 
@@ -12,6 +14,7 @@ This environment provides a **hands-on introduction** to how SOC teams collect, 
 ---
 
 ## 🎯 Objectives
+
 - Install and configure a functional **MISP instance** on Ubuntu.  
 - Configure `misp.local` access from **MacOS, Linux, and Windows** machines.  
 - Change the **default admin credentials** and enforce password complexity.  
@@ -23,6 +26,7 @@ This environment provides a **hands-on introduction** to how SOC teams collect, 
 ---
 
 ## 🛠 Features
+
 - **Multi-organization support** (Admin + Client organizations).  
 - **Role-based access control** (Admin, Analyst, Read-only).  
 - **Event creation workflow** with attributes, attachments, and tags.  
