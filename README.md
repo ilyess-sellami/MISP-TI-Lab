@@ -33,7 +33,7 @@ cd MISP-TI-Lab
 
 ### 2. Install Dependencies
 
-Ensure you have a Linux server (Ubuntu 20.04+) and run the provided install script:
+Ensure you have a **Linux server (Ubuntu 20.04+)** and run the provided install script:
 
 ```bash
 chmod +x INSTALL.ubuntu2404.sh
