@@ -4,7 +4,7 @@
 
 
 ## Overview
-**MacSOC-MISP Lab** is a simulated Security Operations Center (SOC) environment built around **MISP (Malware Information Sharing Platform)**. This lab allows security analysts to practice **threat intelligence collection, correlation, and sharing** by simulating real-world cyber threats such as ransomware campaigns, phishing attacks, and network reconnaissance. The lab demonstrates how organizations can track, analyze, and respond to cyber threats in a controlled environment.
+**MISP-TI-Lab** is a simulated Security Operations Center (SOC) environment built around **MISP (Malware Information Sharing Platform)**. This lab allows security analysts to practice **threat intelligence collection, correlation, and sharing** by simulating real-world cyber threats such as ransomware campaigns. The lab demonstrates how organizations can track, analyze, and respond to cyber threats in a controlled environment.
 
 
 ## Objectives
