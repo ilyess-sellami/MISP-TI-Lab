@@ -54,7 +54,7 @@ After the installation is completed, a default admin login is generated:
 
 Before accessing MISP from your local machine, you need to map the `misp.local` domain to your Ubuntu server’s IP address because MISP references this domain by default.
 
-- macOS / Linux:
+**MacOS / Linux:**
 1. Open a terminal.
 2. Edit your hosts file with a text editor using `sudo`:
 ```bash
