@@ -206,3 +206,8 @@ To simulate a realistic attack, we will create an event representing a **Conti r
 - `53b1c1b2f41a7fc300e97d036e57539453ff82001dd3f6abf07f4896b1f9ca22.exe`
 
 ![MISP Add File Attachement](/screenshots/misp_event_add_attachement.png)
+
+6. Optionally, add **tags or galaxy clusters** such as `Ransomware`, `Conti` 
+
+7. Click **Submit** to create and publish the event
+
