@@ -202,4 +202,7 @@ To simulate a realistic attack, we will create an event representing a **Conti r
 
 ![MISP ADD ATTRIBUTES](/screenshots/misp_event_add_attribute.png)
 
-- **File Attachment:** `53b1c1b2f41a7fc300e97d036e57539453ff82001dd3f6abf07f4896b1f9ca22.exe`
+5. Add the malware **File Attachment**: 
+- `53b1c1b2f41a7fc300e97d036e57539453ff82001dd3f6abf07f4896b1f9ca22.exe`
+
+![MISP Add File Attachement](/screenshots/misp_event_add_attachement.png)
