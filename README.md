@@ -171,7 +171,7 @@ After creating the client organization, you need to add SOC users and assign the
 
 4. Save the user.
 
-### Add Malware Event for Client Organization
+### 7. Add Malware Event for Client Organization
 
 To simulate a realistic attack, we will create an event representing a **Conti ransomware incident** targeting the client organization **Acme Finance Ltd**.
 
