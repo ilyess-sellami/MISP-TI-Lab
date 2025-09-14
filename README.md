@@ -250,7 +250,8 @@ Once published:
 
 ## ✅ Conclusion
 
-This lab demonstrates how to set up and use MISP (Malware Information Sharing Platform) as a SOC tool for managing and sharing threat intelligence.  
+This lab demonstrates how to set up and use MISP (Malware Information Sharing Platform) as a SOC tool for **managing and sharing threat intelligence**.  
+
 By walking through the process of installing MISP, creating an organization and users, and simulating a real-world ransomware attack event, we saw how MISP helps:  
 
 - **Centralize threat intelligence** with structured events and attributes.  
@@ -258,6 +259,6 @@ By walking through the process of installing MISP, creating an organization and 
 - **Improve collaboration** between SOC teams and organizations by sharing indicators of compromise.  
 - **Support incident response** with actionable data such as hashes, IPs, domains, and malicious files.  
 
-With this setup, security teams can quickly detect, analyze, and respond to threats, while also contributing to a global community of defenders.  
+With this setup, security teams can **quickly detect, analyze, and respond to threats**, while also **contributing to a global community of defenders**.  
 
 
