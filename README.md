@@ -1,6 +1,6 @@
 # MISP-TI-Lab - Simulated SOC Threat Intelligence Environment
 
-![MISP Image](/screenshots/misp.png)
+![MISP Image](/screenshots/MISP-TI-Lab.png)
 
 ---
 
